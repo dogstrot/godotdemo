@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqrmagbv2xsgt"]
+
+[ext_resource type="Texture2D" uid="uid://iwum1dnokfko" path="res://assets/dialogueboxnew.png" id="1_fs1ng"]
+[ext_resource type="Script" uid="uid://cd52c0mpf7xkd" path="res://dialogue/DialogueBox.cs" id="1_gboqh"]
+
+[node name="Dialogue box" type="Node2D"]
+script = ExtResource("1_gboqh")
+TextFile = "C:/Users/user/Documents/selfresearch/dialoguefiles/newattempt.txt"
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(366, 540)
+texture = ExtResource("1_fs1ng")
+
+[node name="DialogueSpeed" type="Timer" parent="."]
+wait_time = 0.06
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_left = 46.0
+offset_top = 78.0
+offset_right = 674.0
+offset_bottom = 999.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://hgp2thspmmlp"
+path="res://.godot/imported/dialoguetry2.dialogue-75680fe4131d88cb1793f45f9a7c21fc.tres"
+
+[deps]
+
+source_file="res://dialogue/dialoguetry2.dialogue"
+dest_files=["res://.godot/imported/dialoguetry2.dialogue-75680fe4131d88cb1793f45f9a7c21fc.tres"]
+
+[params]
+
+defaults=true

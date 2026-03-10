@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqcdttg448dbx"]
+
+[ext_resource type="Script" uid="uid://dl57uvqms3yb0" path="res://dialogue/DialogueObject.cs" id="1_48jyy"]
+
+[node name="dialogue object" type="Node2D"]
+script = ExtResource("1_48jyy")
+
+[node name="downdialogueobject" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="downdialogueobject"]
+position = Vector2(157, 148)
+polygon = PackedVector2Array(63, 7, 22, 46, 106, 46)
+
+[node name="updialogueobject" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="updialogueobject"]
+position = Vector2(157, 77)
+polygon = PackedVector2Array(63, 78, 22, 46, 105, 47)
+
+[node name="leftdialogueobject" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="leftdialogueobject"]
+position = Vector2(149, 121)
+polygon = PackedVector2Array(30, 2, 30, 73, 71, 34)
+
+[node name="rightdialogueobject" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="rightdialogueobject"]
+position = Vector2(231, 121)
+polygon = PackedVector2Array(31, 3, 32, 73, -11, 34)
+
+[connection signal="body_entered" from="downdialogueobject" to="." method="DownBodyEntered"]
+[connection signal="body_exited" from="downdialogueobject" to="." method="DownBodyExited"]
+[connection signal="body_entered" from="updialogueobject" to="." method="UpBodyEntered"]
+[connection signal="body_exited" from="updialogueobject" to="." method="UpBodyExited"]
+[connection signal="body_entered" from="leftdialogueobject" to="." method="LeftBodyEntered"]
+[connection signal="body_exited" from="leftdialogueobject" to="." method="LeftBodyExited"]
+[connection signal="body_entered" from="rightdialogueobject" to="." method="RightBodyEntered"]
+[connection signal="body_exited" from="rightdialogueobject" to="." method="RightBodyExited"]

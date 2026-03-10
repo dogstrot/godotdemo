@@ -1,0 +1,12 @@
+~ start
+Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
+Nathan: [wave amp=50.0 freq=5.0 connected=1] Here are some choices. [/wave]
+- First one
+	Nathan: You picked the first one.
+- Second one
+	Nathan: You picked the second one.
+	- I am a monkey
+- Start again => start
+- End the conversation => END
+Nathan: For more information see the online documentation.
+=> END

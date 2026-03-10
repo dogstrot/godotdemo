@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dwdiod228tsdi"
+path="res://.godot/imported/dialoguetry.dialogue-01acdd6aff6fa9fd5615dadc38f4ff23.tres"
+
+[deps]
+
+source_file="res://dialogue/dialoguetry.dialogue"
+dest_files=["res://.godot/imported/dialoguetry.dialogue-01acdd6aff6fa9fd5615dadc38f4ff23.tres"]
+
+[params]
+
+defaults=true
